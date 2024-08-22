@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정리-0822-2t</title>
+    <link href="desktop.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Label 요소</h1>
+    <hr>
+    <b>레이블은 항목이나 파일을 식별하기 위해 사용되는 제목이나 이름입니다.</b>
+    <p>label의 for 속성과 input의 id 속성을 동일한 값으로 주고 label 요소를 클릭하면 자동으로 input태그에 초점이 됩니다.</p>
+    <p>form>lebel for=" = input id=" 동일한 속성으로 값을 주면
+        자동으로 연결됩니다.
+    </p>
+    <form>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name">
+    </form>
+    <img src="images/label.PNG" alr="label" width="700">
+    <hr>
+    <h1>Textarea 요소</h1>
+    <hr>
+    <b>텍스트 영역을 표시하는 요소입니다.</b>
+    <p>form> textarea rows="" cols=""</p>
+    <ul>
+        <li>rows : 열의 수를 지정합니다. (세로)</li>
+        <li>cols : 행의 수를 지정합니다. (가로)</li>
+        <li>maxlength : 사용자가 입력할 수 있는 최대 글자 수를 지정합니다.</li>
+        <li>wrap : 줄바꿈을 지정합니다. wrap="off"로 설정하면 줄바꿈은 일어나지 않습니다.</li>
+    </ul>
+
+    <form>
+        <textarea rows="8" cols="60" placeholder="댓글을 입력하세요!"></textarea>
+        <p>
+        <input type="submit" value="등록">
+        </p>  
+    </form>
+    <br>
+    <img src="images/textarea.PNG" alt="textarea" width="700">
+<hr>
+
+<h1>Select 요소</h1>
+<b>선택 컨트롤을 표시합니다. 옵션 리스트를 메뉴처럼 이용할 수 있도록 고안된 것입니다.</b>
+<br>
+select 기본 (속성을 적용하지 않음.)
+<select>
+    <option>김밥</option>
+    <option>떡볶이</option>
+    <option>순대</option>
+</select>
+<br>
+select 요소에 multiple, size="" 속성을 적용함.
+<p>multiple 속성 : 여러개를 선택하고 싶을 때 사용합니다</p>
+size 속성 : 화면에 표시되는 목록을 나타냅니다.
+<select multiple size="2">
+    <option>김밥</option>
+    <option>떡볶이</option>
+    <option>순대</option>
+</select>
+<br>
+<p>selected 요소를 적용함</p>
+selected 속성 : selected 속성을 적용하여 기본 선택으로 변경할 수 있습니다.
+<select multiple size="2">
+    <option>김밥</option>
+    <option>떡볶이</option>
+    <option>순대</option>
+    <option selected>오뎅</option>
+</select>
+<br>
+<img src="images/select.PNG" alt="select" width="700">
+<hr>
+<h1>Map, Area 요소</h1>
+<hr>
+<p>이미지 위에 클릭할 수 있는 영역을 그려놓은 도면입니다.</p>
+<p>이미지 맵을 만들려면 img, map, area 요소가 필요합니다.</p>
+<p>map요소의 역할은 img와 area요소를 연결시키는 것입니다.</p>
+<p>section> img src="" width="" height="" alt="" usemap="#사용할 맵 이름"</p>
+<p>map name="사용할 맵 이름"</p>
+<b>Area 요소 : 이미지 맵 내부에 링크 영역을 지정하는 요소입니다. 반드시 map요소와 함께 사용합니다.</b>
+<p>shape속성 : 링크 영역의 형태를 지정하는 속성, 원형 사각형, 다각형으로 표시할 수 있습니다</p>
+<p>coorsds속성 : area 요소의 영역 좌표를 지정합니다. (x,y 축을 사용합니다)</p>
+<section>
+    <img src="images.webp" width="300" height="300" alt="" usemap="#map">
+    <map name="map">
+        <area shape="rect" coords="0,0,300,300"
+        href="https://www.naver.com" alt="네이버">
+    </map>
+</section>
+<p>shape="rect" 사각형</p>
+<p>shape="circle" 원형</p>
+<p>shape="default"링크 영역을 기본 상태로 지정 (이미지 전체를 링크 영역으로 지정) </p>
+<img src="images/area.PNG" alt="area" width="700">
+</body>
+
+</html>
