@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습웹</title>
+    <style>
+
+ section{
+    background-color:pink;
+    width:500px;
+    height:500px;
+    text-align:center;
+    border-radius:20px;
+    border:3px dotted hotpink;
+    margin:0 auto;
+    margin-top:300px;
+    }
+
+    .logo{
+        font-size:40px;
+        color:indianred;
+        line-height:200px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight:bold;
+        text-decoration:none;
+    }
+ 
+    section>a + div{
+        display:none;
+        font-size:25px;
+    }
+    section> a:hover + div{
+        display:block;
+    }
+
+    div>a{
+        text-decoration:none;
+        color:white;
+    }
+    </style>
+</head>
+
+<body>
+    <section>
+        <a class="logo" href="https://www.naver.com">NAVER</a>
+        <div>
+            <a class="menu" href="#">MENU</a>
+            <br>
+            <a class="menu2" href="#">MAIL</a>
+            <br>
+            <a class="menu3" href="#">CAFE</a>
+            <br>
+            <a class="menu4" href="#">OPTION</a>
+            <br>
+            <a class="menu5" href="#">BLOG</a>
+            <br>
+            <a class="menu6" href="#">MY</a>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
