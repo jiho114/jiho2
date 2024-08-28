@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            height: 400px;
+            background-image: url(bgimage/universe.jpg);
+            background-size: cover;
+            text-align: center;
+            background-attachment: fixed;
+        }
+
+        .menu-box {
+            margin: 0 auto;
+            padding-top: 400px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 70px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-bottom: 30px;
+            text-shadow: -1px 0px white, 0px 1px white, 1px 0px white, 0px -1px white
+        }
+
+        input {
+            width: 800px;
+            height: 50px;
+            border: none;
+            border-radius: 40px;
+            background-image: url(bgimage/universicon.png);
+            background-size: 40px;
+            background-repeat: no-repeat;
+            background-position-x: 30px;
+            background-position-y: 5px;
+            box-sizing: border-box;
+            padding-left: 90px;
+            font-size: 19px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul>li {
+            margin-top: 30px;
+            color: white;
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        li>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        li>a:hover {
+            color: gray;
+        }
+
+        .background {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(bgimage/bg1.jpg);
+            background-attachment: fixed;
+        }
+
+        h1>a {
+            text-decoration: none;
+            color: black;
+        }
+
+        h1>a:hover {
+            color: white;
+            text-shadow: -1px 0px lightslategray, 0px 1px lightslategray, 1px 0px lightslategray, 0px -1px lightslategray;
+            cursor:default;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav class="menu-box">
+            <h1><a href="#">G&nbsp;</a>
+                <a href="#"><sub>O</sub>&nbsp;</a>
+                <a href="#">O&nbsp;</a>
+                <a href="#"><sup>G</sup>&nbsp;</a>
+                <a href="#">L&nbsp;</a>
+                <a href="#"><sub>E</sub></a>
+            </h1>
+            <input type="text" placeholder="Search&nbsp;the&nbsp;Universe&#33;" autofocus>
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Mail</a></li>
+                <li><a href="#">Image</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="background"></div>
+</body>
+
+</html>
